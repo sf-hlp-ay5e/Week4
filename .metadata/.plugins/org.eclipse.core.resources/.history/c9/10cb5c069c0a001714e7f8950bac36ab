@@ -1,0 +1,17 @@
+
+public class Audition {
+
+	private Performer[] performer = {
+			new Performer(1),
+			new Performer(2),
+			new Performer(3),
+			new Performer(4),
+			new Dancer(5,"tap"),
+			new Dancer(6,"square"),
+			new Vocalist(7,"C")
+	}
+
+	public static void main(String[] args) {
+	}
+
+}

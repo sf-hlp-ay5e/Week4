@@ -1,0 +1,10 @@
+
+public class Performer {
+	private static int id;
+	
+	public void perform () {
+		System.out.println(id + " - performer");
+	}
+
+	
+}

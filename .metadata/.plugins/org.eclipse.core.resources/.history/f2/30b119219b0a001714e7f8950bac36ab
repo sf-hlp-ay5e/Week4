@@ -1,0 +1,8 @@
+
+public class Audition {
+
+	public static void main(String[] args) {
+		private Performer[] performer = new Performer();
+	}
+
+}
