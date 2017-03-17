@@ -1,0 +1,12 @@
+
+public class Performer {
+	public Performer(int id) {
+		this.id = id;
+	}
+	public static int id;
+	
+	public void perform () {
+		System.out.println(id + " - performer");
+	}
+	
+}

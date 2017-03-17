@@ -1,0 +1,14 @@
+public class Dancer extends Performer {
+	private danceStyle style;
+	
+	public static enum danceStyle {TAP, SQUARE, CLOGGING};
+
+	public Dancer (int id, danceStyle style) {
+		super.id = id;
+		this.style = style;
+	}
+	
+	public void perform () {
+		System.out.println(style + " - " + id + " - dancer");
+	}
+}

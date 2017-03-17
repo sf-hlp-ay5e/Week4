@@ -1,0 +1,11 @@
+
+public class Playground {
+
+	public static void main(String[] args) {
+		String firstString = "Java is fun!";
+		String secondString = "Java is fun!";
+		boolean isEqualEqual = (firstString == secondString);
+		System.out.println(isEqualEqual);
+	}
+
+}
