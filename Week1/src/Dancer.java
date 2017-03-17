@@ -1,7 +1,8 @@
 public class Dancer extends Performer {
-	private String style;
 
-	public Dancer (int id, String style) {
+	private DanceStyle style;
+	
+	public Dancer (int id, DanceStyle style) {
 		super.id = id;
 		this.style = style;
 	}

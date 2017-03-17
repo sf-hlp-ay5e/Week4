@@ -1,7 +1,7 @@
 public class Vocalist extends Performer {
-	private String key;
-
-	public Vocalist(int id, String key) {
+	private MusicalKey key;
+	
+	public Vocalist(int id, MusicalKey key) {
 		super.id = id;
 		this.key = key;
 	}
