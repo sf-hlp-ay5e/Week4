@@ -1,0 +1,29 @@
+
+public class SomeClass {
+	private String color;
+	private boolean isBordered;
+	
+	public SomeClass(String color, boolean isBordered) {
+		setColor(color);
+		setBordered(isBordered);
+	}
+	public SomeClass(String color) {
+		if (color == null) {
+			color = "Pink";
+		}
+		this(color, true);
+	}
+	
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	public boolean isBordered() {
+		return isBordered;
+	}
+	public void setBordered(boolean isBordered) {
+		this.isBordered = isBordered;
+	}
+}

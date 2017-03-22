@@ -1,7 +1,0 @@
-
-public class Performer {
-	public static int id;
-	public void perform (int id) {
-		System.out.println(id + " - performer");
-	}
-}
