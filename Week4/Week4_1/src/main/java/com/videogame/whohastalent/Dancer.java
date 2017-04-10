@@ -15,4 +15,10 @@ class Dancer extends Performer {
 		this.danceStyle = danceStyle;
 	}
 
+	@Override
+	String perform() {
+		String performance = getDanceStyle() + "-" + getUnionId() + " - dancer";
+		return performance;
+	}
+
 }

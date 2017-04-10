@@ -1,7 +1,5 @@
 package com.videogame.whohastalent;
 
-import static org.junit.Assert.*;
-
 import org.junit.Before;
 import org.junit.Test;
 
@@ -15,8 +13,8 @@ public class PerformerTest {
 	}
 
 	@Test
-	public void TestGoodPerform() {
-		assertEquals("",performer.perform());
+	public void testGoodPerform() {
+		assert(performer.perform().endsWith("performer"));
 	}
 
 }

@@ -9,15 +9,23 @@ public class Audition {
 
 	public Audition() {
 		super();
-		performerList = new ArrayList<Performer>();
+		performerList = new ArrayList<Performer>(0);
 		performerList.add(new Performer());
 		performerList.add(new Performer());
 		performerList.add(new Performer());
 		performerList.add(new Performer());
-		performerList.add(new Dancer(DanceStyle.JIG));
+		performerList.add(new Dancer(DanceStyle.TAP));
 		performerList.add(new Dancer(DanceStyle.BALLET));
 		performerList.add(new Vocalist(MusicalKey.A));
 		
+	}
+	
+	public String performAll() {
+		String performance = "";
+		for (Performer performer : performerList) {
+			performance += performer.perform() + "\n";
+		}
+		return performance;
 	}
 
 }

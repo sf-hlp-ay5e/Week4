@@ -1,7 +1,6 @@
 package com.videogame.whohastalent;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -17,8 +16,16 @@ public class AuditionTest {
 	}
 	
 	@Test
-	public void test() {
+	public void testPerformerListCreated() {
 		assertEquals(7,audition.performerList.size());
 	}
 
+	@Test
+	public void performGoodAudition() {
+		String performance = audition.performAll();
+//		System.out.println(performance);
+		assert(performance.contains("performer"));
+		assert(performance.contains("dancer"));
+		assert(performance.contains("I sing at"));
+	}
 }
